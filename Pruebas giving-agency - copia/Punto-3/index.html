@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nombre Completo</label><label class="validation-error hide" id="nombreCompletoValidationError">Este campo es obligatorio.</label>
+                        <input type="text" name="nombreCompleto" id="nombreCompleto">
+                    </div>
+                    <div>
+                        <label>Correo electronico</label>
+                        <input type="text" name="correo" id="correo">
+                    </div>
+                    <div>
+                        <label>Telefono celular</label>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+                    <div>
+                        <label>Pais</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Guardar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nombre Completo</th>
+                            <th>Correo electronico</th>
+                            <th>Telefono celular</th>
+                            <th>Pais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
