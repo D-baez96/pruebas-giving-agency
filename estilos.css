@@ -9,28 +9,24 @@ body > table{
 }
 
 table{
-    display: flex;
-    flex-direction: column;
-    min-width: 320px;
     border-collapse: collapse;
     margin: 10px;
 }
 table.list{
     width:100%;
+    margin: 0;
 }
 
 td, th {
-    display: flex;
-    flex-direction: column;
     border: 1px solid lightgray;
     padding: 4px;
 
 }
-tr:nth-child(even),table.list thead>tr {
+table.list tr:nth-child(even),table.list thead>tr {
     background-color: #dddddd;
 }
 
-input[type=text], input[type=number] {
+input[type=text], input[type=number], select {
     display: flex;
     flex-direction: column;
     min-width: 320px;
